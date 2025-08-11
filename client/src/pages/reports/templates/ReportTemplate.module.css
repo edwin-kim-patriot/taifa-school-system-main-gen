@@ -1,0 +1,198 @@
+.report {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  page-break-inside: avoid;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #6CB4EE;
+}
+
+.header h1 {
+  color: #1a5276;
+  margin: 5px 0;
+  font-size: 24px;
+}
+
+.header h2 {
+  color: #2c3e50;
+  margin: 5px 0;
+  font-size: 20px;
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #6CB4EE;
+}
+
+.logo {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.studentInfo {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  border-left: 4px solid #6CB4EE;
+}
+
+.studentHeader {
+  margin-bottom: 10px;
+}
+
+.studentHeader h3 {
+  color: #1a5276;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  font-size: 14px;
+}
+
+.gradesTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.gradesTable thead tr {
+  background: linear-gradient(to right, #6CB4EE, #1a5276);
+  color: white;
+}
+
+.gradesTable th {
+  padding: 10px;
+  text-align: left;
+  font-weight: normal;
+}
+
+.gradesTable td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #e1e8ed;
+}
+
+.gradesTable tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.performanceBadge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  min-width: 90px;
+}
+
+.exceeding {
+  background-color: #2ecc71;
+}
+
+.meeting {
+  background-color: #3498db;
+}
+
+.approaching {
+  background-color: #f39c12;
+}
+
+.below {
+  background-color: #e74c3c;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.remarks {
+  flex: 2;
+  padding-right: 20px;
+  min-width: 250px;
+}
+
+.remarksTitle {
+  font-weight: bold;
+  color: #1a5276;
+  margin-bottom: 5px;
+}
+
+.remarksContent {
+  border: 1px dashed #6CB4EE;
+  border-radius: 4px;
+  padding: 10px;
+  min-height: 50px;
+  background-color: #fff;
+}
+
+.signature {
+  flex: 1;
+  text-align: right;
+  min-width: 200px;
+  margin-top: 10px;
+}
+
+.signatureTitle {
+  font-weight: bold;
+  color: #1a5276;
+  margin-bottom: 30px;
+}
+
+.signatureLine {
+  border-bottom: 1px solid #1a5276;
+  display: inline-block;
+  width: 200px;
+}
+
+.emptyRow {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: none;
+  }
+
+  .report {
+    box-shadow: none;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .gradesTable td,
+  .gradesTable th {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .remarksContent {
+    background-color: white !important;
+  }
+
+  .footer {
+    page-break-inside: avoid;
+  }
+}

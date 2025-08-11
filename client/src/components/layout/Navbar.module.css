@@ -1,0 +1,55 @@
+/* C:\taifa-school-system-main\client\src\components\layout\Navbar.module.css */
+/* Navbar.module.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0; /* Start from the left side of the viewport */
+  right: 0; /* Stretch to the right side of the viewport */
+  height: 60px;
+  background-color: #e6f7ff; /* Manchester City FC light blue */
+  color: #003366;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 500; /* Lower z-index so it's behind the sidebar */
+  transition: left 0.3s ease;
+}
+
+/* When sidebar is collapsed */
+.app-container.sidebar-collapsed .navbar {
+  left: 60px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #003366;
+  text-transform: capitalize; /* Capitalize each word for dynamic titles */
+  margin: 0;
+  padding-right: 1rem; /* Ensure spacing from other elements */
+  margin-left: 50px; /* Push title further away from the sidebar */
+  flex-grow: 1; /* Allow the title to take more space */
+  text-align: center; /* Center the title */
+}
+
+.selectWrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+label {
+  font-size: 14px;
+  color: #003366;
+}
+
+select {
+  margin-left: 0.5rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-size: 14px;
+}

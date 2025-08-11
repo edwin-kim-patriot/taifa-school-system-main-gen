@@ -1,0 +1,91 @@
+/* /client/src/pages/reports/templates/AnalysisTemplate.module.css */
+.analysisContainer {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.mainTitle {
+  color: #1a5276;
+  border-bottom: 2px solid #6CB4EE;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.generationDate {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.sectionTitle {
+  color: #1a5276;
+  margin: 25px 0 15px;
+}
+
+.analysisTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.analysisTable th {
+  background: #1a5276;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: normal;
+}
+
+.analysisTable td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.analysisTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.analysisTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+.totalRow {
+  background-color: #f0f8ff !important;
+  font-weight: bold;
+}
+
+.summaryBox {
+  background: #f8f9fa;
+  padding: 15px;
+  border-left: 4px solid #6CB4EE;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+/* Performance level styling helpers */
+.exceeding,
+.performance-exceeding {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.meeting,
+.performance-meeting {
+  color: #2980b9;
+  font-weight: bold;
+}
+
+.approaching,
+.performance-approaching {
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.below,
+.performance-below {
+  color: #e74c3c;
+  font-weight: bold;
+}

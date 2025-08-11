@@ -1,0 +1,41 @@
+/* .container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+  }
+  
+  .previewPlaceholder {
+    height: 500px;
+    border: 2px dashed #ddd;
+    display: grid;
+    place-items: center;
+    margin: 20px 0;
+    background: #f9f9f9;
+    color: #666;
+  } */
+
+
+
+
+
+
+  .container {
+    padding: 20px;
+  }
+  
+  .pdfContainer {
+    height: 80vh;
+    border: 1px dashed #ccc;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
+  }
+  
+  .actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }

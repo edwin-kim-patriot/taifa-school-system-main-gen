@@ -1,0 +1,93 @@
+/* Sidebar.module.css */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 240px;
+  background-color: #a3d2f2; /* Man City sky blue */
+  color: #003a63;
+  padding: 1rem;
+  overflow-y: auto;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease, padding 0.3s ease;
+  z-index: 1001;
+  scroll-behavior: smooth;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.collapsed {
+  width: 60px;
+  padding: 1rem 0.5rem;
+}
+
+.toggleBtn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #003a63;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #002244;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navLink,
+.activeLink {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: #003a63;
+  transition: background-color 0.2s ease;
+}
+
+.navLink:hover {
+  background-color: #d0ebff;
+}
+
+.activeLink {
+  background-color: #4bb3fd;
+  color: white;
+}
+
+.sectionTitle {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #007acc;
+  margin: 1rem 0 0.5rem;
+  padding-left: 1rem;
+}
+
+.submenu {
+  padding-left: 1rem;
+}
+
+.navLink svg,
+.activeLink svg {
+  vertical-align: middle;
+}
+/*and make sure the number of students is fetched dynamically as per the students registered in each grade  i.e for grade 7,8 and grade 9 .not hardcoding as it is currently*/

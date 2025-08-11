@@ -1,0 +1,27 @@
+.input {
+  width: 100%;
+  max-width: 50px; /* tighter width, good for 2 digits */
+  padding: 4px 6px; /* smaller padding = smaller height */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 13px;
+  color: #333;
+  background-color: white;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary, #6CA0DC);
+  box-shadow: 0 0 0 2px rgba(108, 173, 223, 0.2);
+}
+
+.error .input {
+  border-color: #e74c3c;
+}
+
+.errorMessage {
+  color: #e74c3c;
+  font-size: 0.75rem;
+  margin-top: 4px;
+}

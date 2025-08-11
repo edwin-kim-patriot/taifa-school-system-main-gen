@@ -1,0 +1,15 @@
+/* theme.css */
+:root {
+  --primary: #6CADDF;
+  --primary-dark: #1C2C5B;
+  --accent: #FFC659;
+  --text: #333333;
+  --background: #F8F9FA;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  margin: 0;
+}

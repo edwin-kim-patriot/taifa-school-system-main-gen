@@ -1,0 +1,190 @@
+/* C:\taifa-school-system-main\client\src\pages\exams\ResultEntry.module.css */
+.container {
+  padding: 20px;
+  padding-top: 52px; /* Leaves room below navbar */
+  max-width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: 500;
+}
+
+.filters select,
+.filters input[type="file"] {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.tableScrollWrapper {
+  overflow-x: auto;
+  max-height: calc(100vh - 200px);
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  position: relative;
+}
+
+/* Table reset to remove ghost spacing */
+.scoresTable {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+/* Sticky header row */
+.scoresTable thead {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.scoresTable thead th {
+  background-color: var(--primary, #6ca0dc);
+  color: white;
+  font-weight: bold;
+  border-bottom: 2px solid #4178be;
+  z-index: 10;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+/* Sticky first column */
+.scoresTable tbody td:first-child {
+  position: sticky;
+  left: 0;
+  background-color: #f9f9f9;
+  border-right: 2px solid #ddd;
+  z-index: 5;
+  box-shadow: 2px 0 5px -2px rgba(0, 0, 0, 0.1);
+}
+
+.scoresTable td {
+  padding: 8px 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  min-width: 70px;
+}
+
+/* Hover effect */
+.scoresTable tr:hover {
+  background-color: #f0f8ff;
+}
+
+/* Submit button */
+.submitButton {
+  background-color: var(--primary-dark, #4178be);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.submitButton:hover {
+  background-color: #355e9c;
+}
+
+.submitButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Message styles */
+.errorMessage {
+  color: #d32f2f;
+  background-color: #ffcdd2;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.successMessage {
+  color: #388e3c;
+  background-color: #c8e6c9;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.warningMessage {
+  color: #f57c00;
+  background-color: #ffe0b2;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.loadingMessage {
+  color: #1976d2;
+  background-color: #bbdefb;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.statusMessage {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #eaf6ff;
+  border-left: 4px solid #6ca0dc;
+  color: #1e3a5f;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .scoresTable th,
+  .scoresTable td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .submitButton {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .tableScrollWrapper {
+    max-height: calc(100vh - 250px);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-top: 40px;
+  }
+
+  .scoresTable td:first-child {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

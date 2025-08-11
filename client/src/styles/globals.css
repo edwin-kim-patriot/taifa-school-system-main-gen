@@ -1,0 +1,55 @@
+
+/* C:\taifa-school-system-main\client\src\styles\globals.css */
+/* globals.css */
+
+/* App Layout Container */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+/* Main content with navbar spacing */
+.main-content,
+.main-content-page {
+  margin-left: 240px; /* Matches expanded sidebar width */
+  padding: 80px 20px 20px; /* Top padding for fixed navbar */
+  width: calc(100% - 240px);
+  min-height: 100vh;
+  overflow-x: hidden;
+  transition: margin-left 0.3s ease, width 0.3s ease;
+}
+
+/* Adjust layout when sidebar is collapsed */
+.app-container.sidebar-collapsed .main-content,
+.app-container.sidebar-collapsed .main-content-page {
+  margin-left: 60px; /* Collapsed sidebar width */
+  width: calc(100% - 60px);
+}
+
+/* Adjust navbar positioning when sidebar is collapsed */
+.app-container.sidebar-collapsed .navbar {
+  left: 60px;
+}
+
+/* Manchester City FC inspired buttons */
+button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Smooth transitions for animated UI elements */
+.main-content,
+.sidebar,
+button {
+  transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,12 @@
+.badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.exceeding { background: #27ae60; } /* Green */
+.meeting { background: #2980b9; }   /* Blue */
+.approaching { background: #f39c12; } /* Orange */
+.below { background: #e74c3c; }      /* Red */

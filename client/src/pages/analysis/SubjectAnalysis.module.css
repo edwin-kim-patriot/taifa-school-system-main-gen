@@ -1,0 +1,77 @@
+.container {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 20px;
+  }
+  
+  .subjectSelector {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .subjectSelector label {
+    font-weight: 500;
+  }
+  
+  .subjectSelector select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    min-width: 200px;
+  }
+  
+  .analysisGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+  
+  .summaryCard {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+  }
+  
+  .summaryCard h3 {
+    margin-top: 0;
+    color: var(--primary-dark);
+  }
+  
+  .metric {
+    margin: 10px 0;
+    padding: 8px;
+    background: white;
+    border-radius: 4px;
+  }
+  
+  .gradeDistribution {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+  }
+  
+  .gradeDistribution h3 {
+    margin-top: 0;
+    color: var(--primary-dark);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: var(--primary);
+    color: white;
+  }
